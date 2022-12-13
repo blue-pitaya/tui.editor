@@ -93,11 +93,6 @@ class MarkdownPreview {
 
     this.initEvent(highlight);
     this.initContentSection();
-
-    // To prevent overflowing contents in the viewer
-    if (this.isViewer) {
-      this.previewContent.style.overflowWrap = 'break-word';
-    }
   }
 
   private initContentSection() {
